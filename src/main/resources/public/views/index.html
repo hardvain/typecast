@@ -31,7 +31,7 @@ LAST UPDATE: 23/06/2014
     <!-- START STYLESHEETS -->
     <!-- Plugins stylesheet : optional -->
 
-    <link rel="stylesheet" href="../plugins/selectize/css/selectize.min.css">
+    <link rel="stylesheet" href="../plugins/owl/css/owl.carousel.css">
     <!--/ Plugins stylesheet -->
 
     <!-- Application stylesheet : mandatory -->
@@ -413,16 +413,16 @@ LAST UPDATE: 23/06/2014
         <span class="text">Frontend</span>
     </a>
 </li>
-<li class="active open">
+<li >
     <a href="javascript:void(0);" data-target="#dashboard" data-toggle="submenu" data-parent=".topmenu">
         <span class="figure"><i class="ico-home2"></i></span>
         <span class="text">Dashboard</span>
         <span class="arrow"></span>
     </a>
     <!-- START 2nd Level Menu -->
-    <ul id="dashboard" class="submenu collapse in">
+    <ul id="dashboard" class="submenu collapse ">
         <li class="submenu-header ellipsis">Dashboard</li>
-        <li class="active">
+        <li >
             <a href="index.html">
                 <span class="text">Version 1</span>
                 <span class="number"><span class="label label-danger">10</span></span>
@@ -587,14 +587,14 @@ LAST UPDATE: 23/06/2014
     </ul>
     <!--/ END 2nd Level Menu -->
 </li>
-<li >
+<li class="active open">
     <a href="javascript:void(0);" data-toggle="submenu" data-target="#page" data-parent=".topmenu">
         <span class="figure"><i class="ico-file6"></i></span>
         <span class="text">Pages</span>
         <span class="arrow"></span>
     </a>
     <!-- START 2nd Level Menu -->
-    <ul id="page" class="submenu collapse ">
+    <ul id="page" class="submenu collapse in">
         <li class="submenu-header ellipsis">Pages</li>
         <li >
             <a href="page-starter.html">
@@ -724,17 +724,17 @@ LAST UPDATE: 23/06/2014
             </ul>
             <!--/ END 2nd Level Menu -->
         </li>
-        <li >
+        <li class="active open">
             <a href="javascript:void(0);" data-toggle="submenu" data-target="#blog" data-parent="#page">
                 <span class="text">Blog page</span>
                 <span class="arrow"></span>
             </a>
             <!-- START 2nd Level Menu -->
-            <ul id="blog" class="submenu collapse ">
+            <ul id="blog" class="submenu collapse in">
                 <li >
                     <a href="page-blog-default.html"><span class="text">Blog default</span></a>
                 </li>
-                <li >
+                <li class="active">
                     <a href="page-blog-grid.html"><span class="text">Blog grid</span></a>
                 </li>
                 <li >
@@ -865,333 +865,487 @@ LAST UPDATE: 23/06/2014
 <!-- Page Header -->
 <div class="page-header page-header-block">
     <div class="page-header-section">
-        <h4 class="title semibold">Dashboard</h4>
+        <h4 class="title semibold">Blog grid</h4>
     </div>
     <div class="page-header-section">
         <!-- Toolbar -->
-        <div class="toolbar clearfix">
-            <div class="col-xs-8">
-                <select class="form-control text-left" id="selectize-customselect">
-                    <option value="0">Display metrics...</option>
-                    <option value="1">Last 6 month</option>
-                    <option value="2">Last 3 month</option>
-                    <option value="3">Last month</option>
-                </select>
-            </div>
-            <div class="col-xs-4">
-                <button class="btn btn-primary pull-right"><i class="ico-loop4 mr5"></i>Update</button>
-            </div>
+        <div class="toolbar">
+            <ol class="breadcrumb breadcrumb-transparent nm">
+                <li><a href="page-blog-grid.html#">Page</a></li>
+                <li class="active">Blog grid</li>
+            </ol>
         </div>
         <!--/ Toolbar -->
     </div>
 </div>
 <!-- Page Header -->
 
+<!-- START Row -->
 <div class="row">
-<!-- START Left Side -->
-<div class="col-md-9">
-<!-- Top Stats -->
-<div class="row">
-    <div class="col-sm-4">
-        <!-- START Statistic Widget -->
-        <div class="table-layout animation delay animating fadeInDown">
-            <div class="col-xs-4 panel bgcolor-info">
-                <div class="ico-users3 fsize24 text-center"></div>
-            </div>
-            <div class="col-xs-8 panel">
-                <div class="panel-body text-center">
-                    <h4 class="semibold nm">1845</h4>
-                    <p class="semibold text-muted mb0 mt5">REGISTERED USERS</p>
-                </div>
-            </div>
-        </div>
-        <!--/ END Statistic Widget -->
-    </div>
-    <div class="col-sm-4">
-        <!-- START Statistic Widget -->
-        <div class="table-layout animation delay animating fadeInUp">
-            <div class="col-xs-4 panel bgcolor-teal">
-                <div class="ico-crown fsize24 text-center"></div>
-            </div>
-            <div class="col-xs-8 panel">
-                <div class="panel-body text-center">
-                    <h4 class="semibold nm">187</h4>
-                    <p class="semibold text-muted mb0 mt5">PENDING ACTION</p>
-                </div>
-            </div>
-        </div>
-        <!--/ END Statistic Widget -->
-    </div>
-    <div class="col-sm-4">
-        <!-- START Statistic Widget -->
-        <div class="table-layout animation delay animating fadeInDown">
-            <div class="col-xs-4 panel bgcolor-primary">
-                <div class="ico-box-add fsize24 text-center"></div>
-            </div>
-            <div class="col-xs-8 panel">
-                <div class="panel-body text-center">
-                    <h4 class="semibold nm">10</h4>
-                    <p class="semibold text-muted mb0 mt5">UPDATE AVAILABLE</p>
-                </div>
-            </div>
-        </div>
-        <!--/ END Statistic Widget -->
-    </div>
-</div>
-<!--/ Top Stats -->
+<!-- START left / top side -->
+<div class="col-lg-9">
+<div class="row" id="masonry">
+<!-- Blog post #1 -->
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post">
+    <article class="panel overflow-hidden">
+        <!-- Content -->
+        <section class="panel-body">
+            <!-- heading -->
+            <h4 class="thin mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Fusce mollis. Duis sit amet diam eu</a></h4>
+            <!--/ heading -->
 
-<!-- Website States -->
-<div class="row">
-    <div class="col-sm-12">
-        <!-- START panel -->
-        <div class="panel mt10">
-            <!-- panel-toolbar -->
-            <div class="panel-heading pt10">
-                <div class="panel-toolbar">
-                    <h5 class="semibold nm ellipsis">Website States</h5>
-                </div>
-                <div class="panel-toolbar text-right">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-default">Duration</button>
-                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li class="dropdown-header">Select duration :</li>
-                            <li><a href="index.html#">Year</a></li>
-                            <li><a href="index.html#">Month</a></li>
-                            <li><a href="index.html#">Week</a></li>
-                            <li><a href="index.html#">Day</a></li>
-                        </ul>
+            <!-- text -->
+            <div class="text-default">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat&#8230;</p>
+            </div>
+            <!--/ text -->
+
+            <!-- Meta & button -->
+            <!-- meta -->
+            <p class="meta mb15">
+                <a href="javascript:void(0);">Feb 28, 2015</a><!-- date -->
+                <span class="text-muted mr5 ml5">&#8226;</span>
+                <span class="text-muted">In </span><a href="javascript:void(0);">Lifestyle</a><!-- category -->
+                <span class="text-muted mr5 ml5">&#8226;</span>
+                <span class="text-muted">By </span><a href="javascript:void(0);">Dexter Holmes</a><!-- author -->
+            </p>
+            <!--/ meta -->
+            <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+            <!-- Meta & button -->
+        </section>
+        <!--/ Content -->
+    </article>
+</div>
+<!--/ Blog post #1 -->
+
+<!-- Blog post #2 -->
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post">
+    <article class="panel overflow-hidden">
+        <!-- Thumbnail -->
+        <header class="thumbnail">
+            <!-- media -->
+            <div class="media">
+                <!-- indicator -->
+                <div class="indicator"><span class="spinner"></span></div>
+                <!--/ indicator -->
+                <!-- toolbar overlay -->
+                <div class="overlay">
+                    <div class="toolbar">
+                        <a href="javascript:void(0);" class="btn btn-danger"><i class="ico-heart6"></i></a>
                     </div>
                 </div>
+                <!--/ toolbar overlay -->
+                <img data-toggle="unveil" src="../image/background/blog/placeholder.jpg" data-src="../image/background/blog/blog1.jpg" alt="Photo" height="300px">
             </div>
-            <!--/ panel-toolbar -->
-            <!-- panel-body -->
-            <div class="panel-body pt0">
-                <div class="chart mt10" id="chart-audience" style="height:250px;"></div>
-            </div>
-            <!--/ panel-body -->
-            <!-- panel-footer -->
-            <div class="panel-footer hidden-xs">
-                <ul class="nav nav-section nav-justified">
-                    <li>
-                        <div class="section">
-                            <h4 class="bold text-default mt0 mb5" data-toggle="counterup">24,548</h4>
-                            <p class="nm text-muted">
-                                <span class="semibold">Visits</span>
-                                <span class="text-muted mr5 ml5">•</span>
-                                <span class="text-danger"><i class="ico-arrow-down4"></i> 32%</span>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="section">
-                            <h4 class="bold text-default mt0 mb5" data-toggle="counterup">175,132</h4>
-                            <p class="nm text-muted">
-                                <span class="semibold">Page Views</span>
-                                <span class="text-muted mr5 ml5">•</span>
-                                <span class="text-success"><i class="ico-arrow-up4"></i> 15%</span>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="section">
-                            <h4 class="bold text-default mt0 mb5"><span data-toggle="counterup">89.96</span>%</h4>
-                            <p class="nm text-muted">
-                                <span class="semibold">Bounce Rate</span>
-                                <span class="text-muted mr5 ml5">•</span>
-                                <span class="text-success"><i class="ico-arrow-up4"></i> 3%</span>
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!--/ panel-footer -->
-        </div>
-        <!--/ END panel -->
-    </div>
-</div>
-<!--/ Website States -->
+            <!--/ media -->
+        </header>
+        <!--/ Thumbnail -->
 
-<!-- Browser Breakpoint -->
+        <!-- Content -->
+        <section class="panel-body">
+            <!-- heading -->
+            <h4 class="thin mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Vivamus non lorem vitae odio sagittis semper.</a></h4>
+            <!--/ heading -->
+
+            <!-- text -->
+            <div class="text-default">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat&#8230;</p>
+            </div>
+            <!--/ text -->
+
+            <!-- Meta & button -->
+            <!-- meta -->
+            <p class="meta mb15">
+                <a href="javascript:void(0);">Oct 8, 2013</a><!-- date -->
+                <span class="text-muted mr5 ml5">&#8226;</span>
+                <span class="text-muted">In </span><a href="javascript:void(0);">Latest news</a><!-- category -->
+                <span class="text-muted mr5 ml5">&#8226;</span>
+                <span class="text-muted">By </span><a href="javascript:void(0);">Uriel Waters</a><!-- author -->
+            </p>
+            <!--/ meta -->
+            <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+            <!-- Meta & button -->
+        </section>
+        <!--/ Content -->
+    </article>
+</div>
+<!--/ Blog post #2 -->
+
+<!-- Blog post #3 -->
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post">
+    <article class="panel overflow-hidden">
+        <!-- Owl Carousel -->
+        <header id="carousel2" class="owl-carousel">
+            <div class="image"><img src="../image/background/blog/blog2.jpg" height="260px"></div>
+            <div class="image"><img src="../image/background/blog/blog3.jpg" height="260px"></div>
+            <div class="image"><img src="../image/background/blog/blog4.jpg" height="260px"></div>
+        </header>
+        <!--/ Owl Carousel -->
+
+        <!-- Content -->
+        <section class="panel-body">
+            <!-- heading -->
+            <h4 class="thin mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Donec vitae erat vel pede blandit congue.</a></h4>
+            <!--/ heading -->
+
+            <!-- text -->
+            <div class="text-default">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat&#8230;</p>
+            </div>
+            <!--/ text -->
+
+            <!-- Meta & button -->
+            <!-- meta -->
+            <p class="meta mb15">
+                <a href="javascript:void(0);">Sep 21, 2014</a><!-- date -->
+                <span class="text-muted mr5 ml5">&#8226;</span>
+                <span class="text-muted">In </span><a href="javascript:void(0);">Technology</a><!-- category -->
+                <span class="text-muted mr5 ml5">&#8226;</span>
+                <span class="text-muted">By </span><a href="javascript:void(0);">Ima Mack</a><!-- author -->
+            </p>
+            <!--/ meta -->
+            <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+            <!-- Meta & button -->
+        </section>
+        <!--/ Content -->
+    </article>
+</div>
+<!--/ Blog post #3 -->
+
+<!-- Blog post #4 -->
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post">
+    <article class="panel overflow-hidden">
+        <!-- Content -->
+        <section class="panel-body">
+            <!-- heading -->
+            <h4 class="thin mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Phasellus vitae mauris sit amet lorem semper auctor. Mauris</a></h4>
+            <!--/ heading -->
+
+            <!-- text -->
+            <div class="text-default">
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+            <!--/ text -->
+
+            <!-- Meta & button -->
+            <!-- meta -->
+            <p class="meta mb15">
+                <a href="javascript:void(0);">Apr 25, 2014</a><!-- date -->
+                <span class="text-muted mr5 ml5">&#8226;</span>
+                <span class="text-muted">In </span><a href="javascript:void(0);">Latest news</a><!-- category -->
+                <span class="text-muted mr5 ml5">&#8226;</span>
+                <span class="text-muted">By </span><a href="javascript:void(0);">Quon Hayden</a><!-- author -->
+            </p>
+            <!--/ meta -->
+            <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+            <!-- Meta & button -->
+        </section>
+        <!--/ Content -->
+    </article>
+</div>
+<!--/ Blog post #4 -->
+
+<!-- Blog post #5 -->
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post">
+    <article class="panel overflow-hidden">
+        <!-- Iframe container -->
+        <div class="iframe-container">
+            <iframe src="http://player.vimeo.com/video/7449107" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+        </div>
+        <!--/ Iframe container -->
+
+        <!-- Content -->
+        <section class="panel-body">
+            <!-- heading -->
+            <h4 class="thin mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Tempus eu, ligula. Aenean euismod mauris eu elit. Nulla facilisi.</a></h4>
+            <!--/ heading -->
+
+            <!-- text -->
+            <div class="text-default">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat&#8230;</p>
+            </div>
+            <!--/ text -->
+
+            <!-- Meta & button -->
+            <!-- meta -->
+            <p class="meta mb15">
+                <a href="javascript:void(0);">Oct 23, 2014</a><!-- date -->
+                <span class="text-muted mr5 ml5">&#8226;</span>
+                <span class="text-muted">In </span><a href="javascript:void(0);">Latest news</a><!-- category -->
+                <span class="text-muted mr5 ml5">&#8226;</span>
+                <span class="text-muted">By </span><a href="javascript:void(0);">Mollie Beck</a><!-- author -->
+            </p>
+            <!--/ meta -->
+            <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+            <!-- Meta & button -->
+        </section>
+        <!--/ Content -->
+    </article>
+</div>
+<!--/ Blog post #5 -->
+
+<!-- Blog post #6 -->
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post">
+    <article class="panel overflow-hidden">
+        <!-- Thumbnail -->
+        <header class="thumbnail">
+            <!-- media -->
+            <div class="media">
+                <!-- indicator -->
+                <div class="indicator"><span class="spinner"></span></div>
+                <!--/ indicator -->
+                <!-- toolbar overlay -->
+                <div class="overlay">
+                    <div class="toolbar">
+                        <a href="javascript:void(0);" class="btn btn-danger"><i class="ico-heart6"></i></a>
+                    </div>
+                </div>
+                <!--/ toolbar overlay -->
+                <img data-toggle="unveil" src="../image/background/blog/placeholder.jpg" data-src="../image/background/blog/blog5.jpg" alt="Photo" height="230px">
+            </div>
+            <!--/ media -->
+        </header>
+        <!--/ Thumbnail -->
+
+        <!-- Content -->
+        <section class="panel-body">
+            <!-- heading -->
+            <h4 class="thin mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Vivamus nibh dolor, nonummy ac, feugiat non, lobortis quis, pede.</a></h4>
+            <!--/ heading -->
+
+            <!-- text -->
+            <div class="text-default">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat&#8230;</p>
+            </div>
+            <!--/ text -->
+
+            <!-- Meta & button -->
+            <!-- meta -->
+            <p class="meta mb15">
+                <a href="javascript:void(0);">Jul 15, 2013</a><!-- date -->
+                <span class="text-muted mr5 ml5">&#8226;</span>
+                <span class="text-muted">In </span><a href="javascript:void(0);">Nature</a><!-- category -->
+                <span class="text-muted mr5 ml5">&#8226;</span>
+                <span class="text-muted">By </span><a href="javascript:void(0);">Glenna Espinoza</a><!-- author -->
+            </p>
+            <!--/ meta -->
+            <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
+            <!-- Meta & button -->
+        </section>
+        <!--/ Content -->
+    </article>
+</div>
+<!--/ Blog post #6 -->
+</div>
+
+<hr><!-- horizontal line -->
+
+<!-- pager -->
 <div class="row">
     <div class="col-lg-12">
-        <!-- START panel -->
-        <div class="panel panel-default">
-            <!-- panel heading/header -->
-            <div class="panel-heading">
-                <h3 class="panel-title ellipsis"><i class="ico-chrome mr5"></i>Browser Breakpoint</h3>
-                <!-- panel toolbar -->
-                <div class="panel-toolbar text-right">
-                    <!-- option -->
-                    <div class="option">
-                        <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
-                        <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
-                    </div>
-                    <!--/ option -->
-                </div>
-                <!--/ panel toolbar -->
-            </div>
-            <!--/ panel heading/header -->
-            <!-- panel body with collapse capabale -->
-            <div class="table-responsive panel-collapse pull out">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>Browser Name</th>
-                        <th>Rendering Engine</th>
-                        <th>Platform</th>
-                        <th>Activity</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><span class="semibold text-accent">Google Chrome</span></td>
-                        <td>Webkit</td>
-                        <td>Win 2k+ / OSX.3+</td>
-                        <td>
-                            <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,4,1,5,3</span>
-                            <span class="text-muted mr5 ml5">•</span>
-                            <span class="semibold text-muted">50.65%</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="semibold text-accent">Safari</span></td>
-                        <td>Webkit</td>
-                        <td>Win 2k+ / OSX.3+</td>
-                        <td>
-                            <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">5,2,1,3,4</span>
-                            <span class="text-muted mr5 ml5">•</span>
-                            <span class="semibold text-muted">20.31%</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="semibold text-accent">Mozilla Firefox</span></td>
-                        <td>Webkit</td>
-                        <td>Win 2k+ / OSX.3+</td>
-                        <td>
-                            <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,1,5,3,4</span>
-                            <span class="text-muted mr5 ml5">•</span>
-                            <span class="semibold text-muted">61.22%</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="semibold text-accent">Internet Explorer</span></td>
-                        <td>Trident</td>
-                        <td>Win 2k+ / OSX.3+</td>
-                        <td>
-                            <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">3,1,4,5,2</span>
-                            <span class="text-muted mr5 ml5">•</span>
-                            <span class="semibold text-muted">0.65%</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="semibold text-accent">Opera</span></td>
-                        <td>Presto</td>
-                        <td>Win 2k+ / OSX.3+</td>
-                        <td>
-                            <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">1,2,3,4,5</span>
-                            <span class="text-muted mr5 ml5">•</span>
-                            <span class="semibold text-muted">10.87%</span>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!--/ panel body with collapse capabale -->
-        </div>
-        <!--/ END panel -->
-    </div>
-</div>
-<!-- Browser Breakpoint -->
-</div>
-<!--/ END Left Side -->
-
-<!-- START Right Side -->
-<div class="col-md-3">
-    <div class="panel panel-minimal">
-        <div class="panel-heading"><h5 class="panel-title"><i class="ico-health mr5"></i>Latest Activity</h5></div>
-
-        <!-- Media list feed -->
-        <ul class="media-list media-list-feed nm">
-            <li class="media">
-                <div class="media-object pull-left">
-                    <i class="ico-pencil bgcolor-success"></i>
-                </div>
-                <div class="media-body">
-                    <p class="media-heading">EDIT EXISTING PAGE</p>
-                    <p class="media-text"><span class="text-primary semibold">Service Page</span> has been edited by Tamara Moon.</p>
-                    <p class="media-meta">Just Now</p>
-                </div>
-            </li>
-            <li class="media">
-                <div class="media-object pull-left">
-                    <i class="ico-file-plus bgcolor-success"></i>
-                </div>
-                <div class="media-body">
-                    <p class="media-heading">CREATE A NEW PAGE</p>
-                    <p class="media-text"><span class="text-primary semibold">Service Page</span> has been created by Tamara Moon.</p>
-                    <p class="media-meta">2 Hour Ago</p>
-                </div>
-            </li>
-            <li class="media">
-                <div class="media-object pull-left">
-                    <i class="ico-upload22 bgcolor-success"></i>
-                </div>
-                <div class="media-body">
-                    <p class="media-heading">UPLOAD CONTENT</p>
-                    <p class="media-text">Tamara Moon has uploaded 8 new item to the directory</p>
-                    <p class="media-meta">3 Hour Ago</p>
-                </div>
-            </li>
-            <li class="media">
-                <div class="media-object pull-left">
-                    <img src="../image/avatar/avatar6.jpg" class="media-object img-circle" alt="">
-                </div>
-                <div class="media-body">
-                    <p class="media-heading">NEW MESSAGE</p>
-                    <p class="media-text">Arthur Abbott send you a message</p>
-                    <p class="media-meta">3 Hour Ago</p>
-                </div>
-            </li>
-            <li class="media">
-                <div class="media-object pull-left">
-                    <i class="ico-upload22 bgcolor-success"></i>
-                </div>
-                <div class="media-body">
-                    <p class="media-heading">UPLOAD CONTENT</p>
-                    <p class="media-text">Tamara Moon has uploaded 3 new item to the directory</p>
-                    <p class="media-meta">7 Hour Ago</p>
-                </div>
-            </li>
-            <li class="media">
-                <div class="media-object pull-left">
-                    <i class="ico-link5 bgcolor-success"></i>
-                </div>
-                <div class="media-body">
-                    <p class="media-heading">NEW UPDATE AVAILABLE</p>
-                    <p class="media-text">3 new update is available to download</p>
-                    <p class="media-meta">Yesterday</p>
-                </div>
-            </li>
-            <li class="media">
-                <div class="media-object pull-left">
-                    <i class="ico-loop4"></i>
-                </div>
-                <div class="media-body">
-                    <a href="javascript:void(0);" class="media-heading text-primary">Load more feed</a>
-                </div>
-            </li>
+        <ul class="pager mt0">
+            <li class="previous"><a href="javascript:void(0);"><i class="ico-angle-left mr5"></i> Older</a></li>
+            <li class="next"><a href="javascript:void(0);">Newer <i class="ico-angle-right ml5"></i></a></li>
         </ul>
-        <!--/ Media list feed -->
     </div>
 </div>
-<!--/ END Right Side -->
+<!--/ pager -->
 </div>
+<!--/ END left / top side -->
+
+<!-- START right / bottom side -->
+<div class="col-lg-3">
+    <!-- Search form -->
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="ico-search"></i></button>
+                                    </span>
+            </div>
+        </div>
+    </div>
+    <!--/ Search form -->
+
+    <hr><!-- horizontal line -->
+
+    <!-- Categories -->
+    <div class="row">
+        <div class="col-xs-12">
+            <h5 class="semibold mt0 text-primary">Categories</h5>
+            <div class="list-group">
+                <a href="page-blog-grid.html#" class="list-group-item"><i class="ico-angle-right mr5"></i> Photo</a>
+                <a href="page-blog-grid.html#" class="list-group-item"><i class="ico-angle-right mr5"></i> Nature</a>
+                <a href="page-blog-grid.html#" class="list-group-item"><i class="ico-angle-right mr5"></i> Web Design</a>
+                <a href="page-blog-grid.html#" class="list-group-item"><i class="ico-angle-right mr5"></i> Lifestyle</a>
+                <a href="page-blog-grid.html#" class="list-group-item"><i class="ico-angle-right mr5"></i> Technology</a>
+            </div>
+        </div>
+    </div>
+    <!--/ Categories -->
+
+    <hr><!-- horizontal line -->
+
+    <!-- Tags -->
+    <div class="row">
+        <div class="col-xs-12">
+            <h5 class="semibold mt0 text-primary">Tags</h5>
+            <div class="btn-tag">
+                <a href="javascript:void(0);" class="btn btn-default btn-sm">wordpress</a>
+                <a href="javascript:void(0);" class="btn btn-default btn-sm">development</a>
+                <a href="javascript:void(0);" class="btn btn-default btn-sm">bootstrap</a>
+                <a href="javascript:void(0);" class="btn btn-default btn-sm">admin</a>
+                <a href="javascript:void(0);" class="btn btn-default btn-sm">template</a>
+                <a href="javascript:void(0);" class="btn btn-default btn-sm">flat</a>
+                <a href="javascript:void(0);" class="btn btn-default btn-sm">clean</a>
+                <a href="javascript:void(0);" class="btn btn-default btn-sm">awesome</a>
+            </div>
+        </div>
+    </div>
+    <!-- Tags -->
+
+    <hr><!-- horizontal line -->
+
+    <!-- Text widget -->
+    <div class="row">
+        <div class="col-xs-12">
+            <h5 class="semibold mt0 text-primary">Text widget</h5>
+            <p class="nm text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+        </div>
+    </div>
+    <!-- Text widget -->
+
+    <hr><!-- horizontal line -->
+
+    <!-- Tabbed content -->
+    <div class="row">
+        <div class="col-xs-12">
+            <h5 class="semibold mt0 text-primary">Tabbed content</h5>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="page-blog-grid.html#popular" data-toggle="tab">Popular</a></li>
+                <li class=""><a href="page-blog-grid.html#recent" data-toggle="tab">Recent</a></li>
+            </ul>
+            <div class="tab-content panel nm">
+                <div class="tab-pane active pl0 pr0" id="popular">
+                    <!-- Media list -->
+                    <div class="media-list">
+                        <a href="javascript:void(0);" class="media border-dotted">
+                                                <span class="pull-left">
+                                                    <img src="../image/background/400x400/background1.jpg" class="media-object" alt="">
+                                                </span>
+                                                <span class="media-body">
+                                                    <!-- meta icon -->
+                                                    <span class="media-meta">Jan 13, 2014</span>
+                                                    <!--/ meta icon -->
+                                                    <span class="media-heading">Lorem ipsum dolor sit amet</span>
+                                                </span>
+                        </a>
+                        <a href="javascript:void(0);" class="media border-dotted">
+                                                <span class="pull-left">
+                                                    <img src="../image/background/400x400/background2.jpg" class="media-object" alt="">
+                                                </span>
+                                                <span class="media-body">
+                                                    <!-- meta icon -->
+                                                    <span class="media-meta">Nov 27, 2014</span>
+                                                    <!--/ meta icon -->
+                                                    <span class="media-heading">Mauris eu turpis. Nulla aliquet.</span>
+                                                </span>
+                        </a>
+                        <a href="javascript:void(0);" class="media border-dotted">
+                                                <span class="pull-left">
+                                                    <img src="../image/background/400x400/background3.jpg" class="media-object" alt="">
+                                                </span>
+                                                <span class="media-body">
+                                                    <!-- meta icon -->
+                                                    <span class="media-meta">Oct 13, 2014</span>
+                                                    <!--/ meta icon -->
+                                                    <span class="media-heading">Consectetur adipisicing elit.</span>
+                                                </span>
+                        </a>
+                    </div>
+                    <!--/ Message list -->
+                </div>
+                <div class="tab-pane pl0 pr0" id="recent">
+                    <!-- Media list -->
+                    <div class="media-list">
+                        <a href="javascript:void(0);" class="media border-dotted">
+                                                <span class="pull-left">
+                                                    <img src="../image/background/400x400/background4.jpg" class="media-object" alt="">
+                                                </span>
+                                                <span class="media-body">
+                                                    <!-- meta icon -->
+                                                    <span class="media-meta">Apr 26, 2013</span>
+                                                    <!--/ meta icon -->
+                                                    <span class="media-heading">Ut enim ad minim veniam</span>
+                                                </span>
+                        </a>
+                        <a href="javascript:void(0);" class="media border-dotted">
+                                                <span class="pull-left">
+                                                    <img src="../image/background/400x400/background5.jpg" class="media-object" alt="">
+                                                </span>
+                                                <span class="media-body">
+                                                    <!-- meta icon -->
+                                                    <span class="media-meta">Nov 30, 2013</span>
+                                                    <!--/ meta icon -->
+                                                    <span class="media-heading">Duis aute irure dolor in reprehenderit.</span>
+                                                </span>
+                        </a>
+                        <a href="javascript:void(0);" class="media border-dotted">
+                                                <span class="pull-left">
+                                                    <img src="../image/background/400x400/background6.jpg" class="media-object" alt="">
+                                                </span>
+                                                <span class="media-body">
+                                                    <!-- meta icon -->
+                                                    <span class="media-meta">Oct 8, 2014</span>
+                                                    <!--/ meta icon -->
+                                                    <span class="media-heading">Excepteur sint occaecat cupidatat non</span>
+                                                </span>
+                        </a>
+                    </div>
+                    <!--/ Message list -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tabbed content -->
+</div>
+<!--/ END right / bottom side -->
+</div>
+<!--/ END Row -->
 </div>
 <!--/ END Template Container -->
 
 <!-- START To Top Scroller -->
-<a href="index.html#" class="totop animation" data-toggle="waypoints totop" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="50%"><i class="ico-angle-up"></i></a>
+<a href="page-blog-grid.html#" class="totop animation" data-toggle="waypoints totop" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="50%"><i class="ico-angle-up"></i></a>
 <!--/ END To Top Scroller -->
 
 </section>
@@ -1592,19 +1746,11 @@ LAST UPDATE: 23/06/2014
 <script type="text/javascript" src="../javascript/app.min.js"></script>
 
 
-<script type="text/javascript" src="../plugins/flot/jquery.flot.min.js"></script>
+<script type="text/javascript" src="../plugins/owl/js/owl.carousel.min.js"></script>
 
-<script type="text/javascript" src="../plugins/flot/jquery.flot.categories.min.js"></script>
+<script type="text/javascript" src="../plugins/masonry/js/masonry.pkgd.min.js"></script>
 
-<script type="text/javascript" src="../plugins/flot/jquery.flot.tooltip.min.js"></script>
-
-<script type="text/javascript" src="../plugins/flot/jquery.flot.resize.min.js"></script>
-
-<script type="text/javascript" src="../plugins/flot/jquery.flot.spline.min.js"></script>
-
-<script type="text/javascript" src="../plugins/selectize/js/selectize.min.js"></script>
-
-<script type="text/javascript" src="../javascript/pages/dashboard.js"></script>
+<script type="text/javascript" src="../javascript/pages/blog.js"></script>
 
 <!--/ App and page level script -->
 <!--/ END JAVASCRIPT SECTION -->
