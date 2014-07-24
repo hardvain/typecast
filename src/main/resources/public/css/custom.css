@@ -1,3 +1,7 @@
 .sharp-radius{
     border-radius: 0px;
 }
+.justify{
+    text-align: justify;
+    line-height: 30px;
+}
