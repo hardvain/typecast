@@ -2,8 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415f5f9f-0383-4a2c-a649-8401f350ef03" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/stylesheet/uielement.min.css" afterPath="$PROJECT_DIR$/src/main/resources/public/stylesheet/uielement.min.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/400x250/placeholder.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/400x400/background1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/400x400/background11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/400x400/background12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/400x400/background2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/400x400/background3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/400x400/background4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/400x400/background5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/400x400/background6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/400x400/background7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/400x400/background8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/400x400/placeholder.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/background9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/blog/blog2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/blog/blog3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/blog/blog4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/blog/blog5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/blog/placeholder.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/image/background/placeholder.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/views/dashboard.html" afterPath="$PROJECT_DIR$/src/main/resources/public/views/dashboard.html" />
     </list>
     <ignored path="finatra_example.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,22 +84,77 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uielement.min.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="uielement.min.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/stylesheet/uielement.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2647059" vertical-offset="0" max-vertical-offset="476">
+            <state vertical-scroll-proportion="-4.8461537" vertical-offset="0" max-vertical-offset="252">
               <caret line="6" column="76150" selection-start-line="6" selection-start-column="76150" selection-end-line="6" selection-end-column="76150" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/views/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.423077" vertical-offset="6910" max-vertical-offset="7749">
-              <caret line="363" column="6" selection-start-line="363" selection-start-column="6" selection-end-line="363" selection-end-column="6" />
-              <folding />
+            <state vertical-scroll-proportion="0.19957983" vertical-offset="997" max-vertical-offset="1743">
+              <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
+              <folding>
+                <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#0;tag#div#0;tag#section#0;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#1;tag#div#0;tag#section#0;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#0;tag#section#0;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#article#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#section#0;tag#article#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#section#0;tag#article#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#0;tag#div#0;tag#section#0;tag#article#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#1;tag#div#0;tag#section#0;tag#article#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#0;tag#section#0;tag#article#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#article#0;tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#section#0;tag#article#0;tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#section#0;tag#article#0;tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#0;tag#div#0;tag#section#0;tag#article#0;tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#1;tag#div#0;tag#section#0;tag#article#0;tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#0;tag#section#0;tag#article#0;tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#article#0;tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#section#0;tag#article#0;tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#section#0;tag#article#0;tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#0;tag#div#0;tag#section#0;tag#article#0;tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#1;tag#div#0;tag#section#0;tag#article#0;tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#0;tag#section#0;tag#article#0;tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#article#0;tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#section#0;tag#article#0;tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#section#0;tag#article#0;tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#0;tag#div#0;tag#section#0;tag#article#0;tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#1;tag#div#0;tag#section#0;tag#article#0;tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#p#0;tag#section#0;tag#article#0;tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#1;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#2;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#2;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#3;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#3;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#p#0;tag#div#0;tag#div#3;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#ul#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#span#1;tag#a#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#a#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#span#0;tag#a#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#span#1;tag#a#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#a#2;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#span#0;tag#a#2;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#span#1;tag#a#2;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#span#1;tag#a#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#a#1;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#span#0;tag#a#1;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#span#1;tag#a#1;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#a#2;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#span#0;tag#a#2;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#span#1;tag#a#2;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,9 +177,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/public/css/custom.css" />
         <option value="$PROJECT_DIR$/src/main/resources/public/views/aboutme.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/javascript/app.min.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/views/dashboard.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/views/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/stylesheet/uielement.min.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/views/dashboard.html" />
       </list>
     </option>
   </component>
@@ -399,6 +485,36 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finatra_example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typecast" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -697,16 +813,16 @@
       <updated>1406188516641</updated>
       <workItem from="1406188518094" duration="278000" />
       <workItem from="1406192498517" duration="6999000" />
-      <workItem from="1406254111281" duration="800000" />
+      <workItem from="1406254111281" duration="1088000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8077000" />
+    <option name="totallyTimeSpent" value="8365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -727,7 +843,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -852,14 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/views/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.423077" vertical-offset="6910" max-vertical-offset="7749">
-          <caret line="363" column="6" selection-start-line="363" selection-start-column="6" selection-end-line="363" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-33.115383" vertical-offset="0" max-vertical-offset="1176">
@@ -887,9 +995,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/stylesheet/uielement.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2647059" vertical-offset="0" max-vertical-offset="476">
+        <state vertical-scroll-proportion="-4.8461537" vertical-offset="0" max-vertical-offset="252">
           <caret line="6" column="76150" selection-start-line="6" selection-start-column="76150" selection-end-line="6" selection-end-column="76150" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19957983" vertical-offset="997" max-vertical-offset="1743">
+          <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#0;tag#div#0;tag#section#0;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#1;tag#div#0;tag#section#0;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#0;tag#section#0;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#article#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#section#0;tag#article#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#section#0;tag#article#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#0;tag#div#0;tag#section#0;tag#article#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#1;tag#div#0;tag#section#0;tag#article#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#0;tag#section#0;tag#article#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#article#0;tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#section#0;tag#article#0;tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#section#0;tag#article#0;tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#0;tag#div#0;tag#section#0;tag#article#0;tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#1;tag#div#0;tag#section#0;tag#article#0;tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#0;tag#section#0;tag#article#0;tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#article#0;tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#section#0;tag#article#0;tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#section#0;tag#article#0;tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#0;tag#div#0;tag#section#0;tag#article#0;tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#1;tag#div#0;tag#section#0;tag#article#0;tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#0;tag#section#0;tag#article#0;tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#article#0;tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#section#0;tag#article#0;tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#section#0;tag#article#0;tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#0;tag#div#0;tag#section#0;tag#article#0;tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#1;tag#div#0;tag#section#0;tag#article#0;tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#p#0;tag#section#0;tag#article#0;tag#div#4;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#1;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#2;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#2;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#3;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#3;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#p#0;tag#div#0;tag#div#3;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#ul#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#span#1;tag#a#0;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#a#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#span#0;tag#a#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#span#1;tag#a#1;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#a#2;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#span#0;tag#a#2;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#span#1;tag#a#2;tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#span#1;tag#a#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#a#1;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#span#0;tag#a#1;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#span#1;tag#a#1;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#a#2;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#span#0;tag#a#2;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#span#1;tag#a#2;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#4;tag#div#1;tag#div#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
