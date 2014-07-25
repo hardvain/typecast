@@ -65,8 +65,8 @@
       <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/views/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.028301887" vertical-offset="0" max-vertical-offset="2751">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.254717" vertical-offset="0" max-vertical-offset="2751">
+              <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
               <folding>
                 <element signature="tag#div#7;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
               </folding>
@@ -728,12 +728,12 @@
       <updated>1406188516641</updated>
       <workItem from="1406188518094" duration="278000" />
       <workItem from="1406192498517" duration="6999000" />
-      <workItem from="1406254111281" duration="1561000" />
+      <workItem from="1406254111281" duration="1642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8838000" />
+    <option name="totallyTimeSpent" value="8919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
@@ -918,8 +918,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/views/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028301887" vertical-offset="0" max-vertical-offset="2751">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.254717" vertical-offset="0" max-vertical-offset="2751">
+          <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
           <folding>
             <element signature="tag#div#7;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
           </folding>
