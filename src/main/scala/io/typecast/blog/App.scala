@@ -9,7 +9,5 @@ object App extends FinatraServer{
   register(new HomeController)
 }
 
-class AppView extends View{
-	val template = "/public/views/index.html"
-}
+
 
