@@ -1,11 +1,11 @@
-<html class="backend">
+<html ng-app="typecast">
 <head>
-    <!-- START META SECTION -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TypeCast</title>
     <meta name="author" content="Aravindh">
     <meta name="description" content="From programming to gadgets...">
+    <meta name="keywords" content="programming scala functional coding gadgets">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../image/touch/apple-touch-icon-144x144-precomposed.png">
@@ -13,492 +13,81 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../image/touch/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../image/touch/apple-touch-icon-57x57-precomposed.png">
     <link rel="shortcut icon" href="../image/favicon.ico">
-    <!--/ END META SECTION -->
 
-    <!-- START STYLESHEETS -->
-    <!-- Plugins stylesheet : optional -->
-
-    <link rel="stylesheet" href="../plugins/owl/css/owl.carousel.css">
-    <!--/ Plugins stylesheet -->
-
-    <!-- Application stylesheet : mandatory -->
     <link rel="stylesheet" href="../library/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheet/layout.min.css">
     <link rel="stylesheet" href="../stylesheet/uielement.min.css">
-    <!--/ Application stylesheet -->
-    <!-- END STYLESHEETS -->
 
-    <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
-    <script src="../library/modernizr/js/modernizr.min.js"></script>
-    <!--/ END JAVASCRIPT SECTION -->
 </head>
 <body>
-<!-- START Template Header -->
-<header id="header" class="navbar navbar-fixed-top">
-<!-- START navbar header -->
-<div class="navbar-header">
-    <!-- Brand -->
-    <a class="navbar-brand" href="javascript:void(0);">
-        <span class="logo-figure"></span>
-        <span class="logo-text"></span>
-    </a>
-    <!--/ Brand -->
-</div>
-<!--/ END navbar header -->
-
-<!-- START Toolbar -->
-<div class="navbar-toolbar clearfix">
-<!-- START Left nav -->
-<ul class="nav navbar-nav navbar-left">
-<!-- Sidebar shrink -->
-<li class="hidden-xs hidden-sm">
-    <a href="javascript:void(0);" class="sidebar-minimize" data-toggle="minimize" title="Minimize sidebar">
-                            <span class="meta">
-                                <span class="icon"></span>
-                            </span>
-    </a>
-</li>
-<!--/ Sidebar shrink -->
-
-<!-- Offcanvas left: This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
-<li class="navbar-main hidden-lg hidden-md hidden-sm">
-    <a href="javascript:void(0);" data-toggle="sidebar" data-direction="ltr" rel="tooltip" title="Menu sidebar">
-                            <span class="meta">
-                                <span class="icon"><i class="ico-paragraph-justify3"></i></span>
-                            </span>
-    </a>
-</li>
-<!--/ Offcanvas left -->
-
-</ul>
-<!--/ END Left nav -->
-</div>
-<!--/ END Toolbar -->
-</header>
-<!--/ END Template Header -->
-
-<!-- START Template Sidebar (Left) -->
-<aside class="sidebar sidebar-left sidebar-menu">
-<!-- START Sidebar Content -->
-<section class="content slimscroll">
-<h5 class="heading">TypeCast</h5>
-<!-- START Template Navigation/Menu -->
-<ul class="topmenu topmenu-responsive" data-toggle="menu">
-<li >
-    <a href="../gh_frontend/index.html">
-        <span class="figure"><i class="ico-home2"></i></span>
-        <span class="text">Dashboard</span>
-    </a>
-</li>
-<li >
-    <a href="../gh_frontend/index.html">
-        <span class="figure"><i class="ico-user"></i></span>
-        <span class="text">About Me</span>
-    </a>
-</li>
-</ul>
-</section>
-</aside>
-<section id="main" role="main">
-<div class="container-fluid">
-<div class="page-header page-header-block">
-    <div class="page-header-section">
-        <h4 class="title semibold">Blog grid</h4>
-    </div>
-    <div class="page-header-section">
-        <!-- Toolbar -->
-        <div class="toolbar">
-            <ol class="breadcrumb breadcrumb-transparent nm">
-                <li><a href="page-blog-grid.html#">Page</a></li>
-                <li class="active">Blog grid</li>
-            </ol>
+    <header id="header" class="navbar navbar-fixed-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="javascript:void(0);">
+                <span class="logo-figure"></span>
+                <span class="logo-text"></span>
+            </a>
         </div>
-        <!--/ Toolbar -->
-    </div>
-</div>
-<div class="row">
-<!-- START left / top side -->
-<div class="col-lg-9">
-<div class="row" id="masonry">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post">
-    <article class="panel overflow-hidden">
-        <!-- Content -->
-        <section class="panel-body">
-            <!-- heading -->
-            <h4 class="thin mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Fusce mollis. Duis sit amet diam eu</a></h4>
-            <!--/ heading -->
+        <div class="navbar-toolbar clearfix">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="hidden-xs hidden-sm">
+                    <a href="javascript:void(0);" class="sidebar-minimize" data-toggle="minimize" title="Minimize sidebar">
+                        <span class="meta">
+                            <span class="icon"></span>
+                        </span>
+                    </a>
+                </li>
 
-            <!-- text -->
-            <div class="text-default">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat&#8230;</p>
-            </div>
-            <!--/ text -->
+                <!-- Offcanvas left: This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
+                <li class="navbar-main hidden-lg hidden-md hidden-sm">
+                    <a href="javascript:void(0);" data-toggle="sidebar" data-direction="ltr" rel="tooltip" title="Menu sidebar">
+                        <span class="meta">
+                            <span class="icon"><i class="ico-paragraph-justify3"></i></span>
+                        </span>
+                    </a>
+                </li>
+            <!--/ Offcanvas left -->
 
-            <!-- Meta & button -->
-            <!-- meta -->
-            <p class="meta mb15">
-                <a href="javascript:void(0);">Feb 28, 2015</a><!-- date -->
-                <span class="text-muted mr5 ml5">&#8226;</span>
-                <span class="text-muted">In </span><a href="javascript:void(0);">Lifestyle</a><!-- category -->
-                <span class="text-muted mr5 ml5">&#8226;</span>
-                <span class="text-muted">By </span><a href="javascript:void(0);">Dexter Holmes</a><!-- author -->
-            </p>
-            <!--/ meta -->
-            <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
-            <!-- Meta & button -->
-        </section>
-        <!--/ Content -->
-    </article>
-</div>
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post">
-    <article class="panel overflow-hidden">
-        <!-- Content -->
-        <section class="panel-body">
-            <!-- heading -->
-            <h4 class="thin mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Fusce mollis. Duis sit amet diam eu</a></h4>
-            <!--/ heading -->
-
-            <!-- text -->
-            <div class="text-default">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat&#8230;</p>
-            </div>
-            <!--/ text -->
-
-            <!-- Meta & button -->
-            <!-- meta -->
-            <p class="meta mb15">
-                <a href="javascript:void(0);">Feb 28, 2015</a><!-- date -->
-                <span class="text-muted mr5 ml5">&#8226;</span>
-                <span class="text-muted">In </span><a href="javascript:void(0);">Lifestyle</a><!-- category -->
-                <span class="text-muted mr5 ml5">&#8226;</span>
-                <span class="text-muted">By </span><a href="javascript:void(0);">Dexter Holmes</a><!-- author -->
-            </p>
-            <!--/ meta -->
-            <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
-            <!-- Meta & button -->
-        </section>
-        <!--/ Content -->
-    </article>
-</div>
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post">
-    <article class="panel overflow-hidden">
-        <!-- Content -->
-        <section class="panel-body">
-            <!-- heading -->
-            <h4 class="thin mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Fusce mollis. Duis sit amet diam eu</a></h4>
-            <!--/ heading -->
-
-            <!-- text -->
-            <div class="text-default">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat&#8230;</p>
-            </div>
-            <!--/ text -->
-
-            <!-- Meta & button -->
-            <!-- meta -->
-            <p class="meta mb15">
-                <a href="javascript:void(0);">Feb 28, 2015</a><!-- date -->
-                <span class="text-muted mr5 ml5">&#8226;</span>
-                <span class="text-muted">In </span><a href="javascript:void(0);">Lifestyle</a><!-- category -->
-                <span class="text-muted mr5 ml5">&#8226;</span>
-                <span class="text-muted">By </span><a href="javascript:void(0);">Dexter Holmes</a><!-- author -->
-            </p>
-            <!--/ meta -->
-            <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
-            <!-- Meta & button -->
-        </section>
-        <!--/ Content -->
-    </article>
-</div>
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post">
-    <article class="panel overflow-hidden">
-        <!-- Content -->
-        <section class="panel-body">
-            <!-- heading -->
-            <h4 class="thin mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Fusce mollis. Duis sit amet diam eu</a></h4>
-            <!--/ heading -->
-
-            <!-- text -->
-            <div class="text-default">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat&#8230;</p>
-            </div>
-            <!--/ text -->
-
-            <!-- Meta & button -->
-            <!-- meta -->
-            <p class="meta mb15">
-                <a href="javascript:void(0);">Feb 28, 2015</a><!-- date -->
-                <span class="text-muted mr5 ml5">&#8226;</span>
-                <span class="text-muted">In </span><a href="javascript:void(0);">Lifestyle</a><!-- category -->
-                <span class="text-muted mr5 ml5">&#8226;</span>
-                <span class="text-muted">By </span><a href="javascript:void(0);">Dexter Holmes</a><!-- author -->
-            </p>
-            <!--/ meta -->
-            <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
-            <!-- Meta & button -->
-        </section>
-        <!--/ Content -->
-    </article>
-</div>
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post">
-    <article class="panel overflow-hidden">
-        <!-- Content -->
-        <section class="panel-body">
-            <!-- heading -->
-            <h4 class="thin mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Fusce mollis. Duis sit amet diam eu</a></h4>
-            <!--/ heading -->
-
-            <!-- text -->
-            <div class="text-default">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat&#8230;</p>
-            </div>
-            <!--/ text -->
-
-            <!-- Meta & button -->
-            <!-- meta -->
-            <p class="meta mb15">
-                <a href="javascript:void(0);">Feb 28, 2015</a><!-- date -->
-                <span class="text-muted mr5 ml5">&#8226;</span>
-                <span class="text-muted">In </span><a href="javascript:void(0);">Lifestyle</a><!-- category -->
-                <span class="text-muted mr5 ml5">&#8226;</span>
-                <span class="text-muted">By </span><a href="javascript:void(0);">Dexter Holmes</a><!-- author -->
-            </p>
-            <!--/ meta -->
-            <a href="javascript:void(0);" class="btn btn-success">Read more&#8230;</a>
-            <!-- Meta & button -->
-        </section>
-        <!--/ Content -->
-    </article>
-</div>
-
-</div>
-
-<hr><!-- horizontal line -->
-
-<!-- pager -->
-<div class="row">
-    <div class="col-lg-12">
-        <ul class="pager mt0">
-            <li class="previous"><a href="javascript:void(0);"><i class="ico-angle-left mr5"></i> Older</a></li>
-            <li class="next"><a href="javascript:void(0);">Newer <i class="ico-angle-right ml5"></i></a></li>
-        </ul>
-    </div>
-</div>
-<!--/ pager -->
-</div>
-<!--/ END left / top side -->
-
-<!-- START right / bottom side -->
-<div class="col-lg-3">
-    <!-- Search form -->
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button"><i class="ico-search"></i></button>
-                                    </span>
-            </div>
-        </div>
-    </div>
-    <!--/ Search form -->
-
-    <hr><!-- horizontal line -->
-
-    <!-- Categories -->
-    <div class="row">
-        <div class="col-xs-12">
-            <h5 class="semibold mt0 text-primary">Categories</h5>
-            <div class="list-group">
-                <a href="page-blog-grid.html#" class="list-group-item"><i class="ico-angle-right mr5"></i> Photo</a>
-                <a href="page-blog-grid.html#" class="list-group-item"><i class="ico-angle-right mr5"></i> Nature</a>
-                <a href="page-blog-grid.html#" class="list-group-item"><i class="ico-angle-right mr5"></i> Web Design</a>
-                <a href="page-blog-grid.html#" class="list-group-item"><i class="ico-angle-right mr5"></i> Lifestyle</a>
-                <a href="page-blog-grid.html#" class="list-group-item"><i class="ico-angle-right mr5"></i> Technology</a>
-            </div>
-        </div>
-    </div>
-    <!--/ Categories -->
-
-    <hr><!-- horizontal line -->
-
-    <!-- Tags -->
-    <div class="row">
-        <div class="col-xs-12">
-            <h5 class="semibold mt0 text-primary">Tags</h5>
-            <div class="btn-tag">
-                <a href="javascript:void(0);" class="btn btn-default btn-sm">wordpress</a>
-                <a href="javascript:void(0);" class="btn btn-default btn-sm">development</a>
-                <a href="javascript:void(0);" class="btn btn-default btn-sm">bootstrap</a>
-                <a href="javascript:void(0);" class="btn btn-default btn-sm">admin</a>
-                <a href="javascript:void(0);" class="btn btn-default btn-sm">template</a>
-                <a href="javascript:void(0);" class="btn btn-default btn-sm">flat</a>
-                <a href="javascript:void(0);" class="btn btn-default btn-sm">clean</a>
-                <a href="javascript:void(0);" class="btn btn-default btn-sm">awesome</a>
-            </div>
-        </div>
-    </div>
-    <!-- Tags -->
-
-    <hr><!-- horizontal line -->
-
-    <!-- Text widget -->
-    <div class="row">
-        <div class="col-xs-12">
-            <h5 class="semibold mt0 text-primary">Text widget</h5>
-            <p class="nm text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-        </div>
-    </div>
-    <!-- Text widget -->
-
-    <hr><!-- horizontal line -->
-
-    <!-- Tabbed content -->
-    <div class="row">
-        <div class="col-xs-12">
-            <h5 class="semibold mt0 text-primary">Tabbed content</h5>
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="page-blog-grid.html#popular" data-toggle="tab">Popular</a></li>
-                <li class=""><a href="page-blog-grid.html#recent" data-toggle="tab">Recent</a></li>
             </ul>
-            <div class="tab-content panel nm">
-                <div class="tab-pane active pl0 pr0" id="popular">
-                    <!-- Media list -->
-                    <div class="media-list">
-                        <a href="javascript:void(0);" class="media border-dotted">
-                                                <span class="pull-left">
-                                                    <img src="../image/background/400x400/background1.jpg" class="media-object" alt="">
-                                                </span>
-                                                <span class="media-body">
-                                                    <!-- meta icon -->
-                                                    <span class="media-meta">Jan 13, 2014</span>
-                                                    <!--/ meta icon -->
-                                                    <span class="media-heading">Lorem ipsum dolor sit amet</span>
-                                                </span>
-                        </a>
-                        <a href="javascript:void(0);" class="media border-dotted">
-                                                <span class="pull-left">
-                                                    <img src="../image/background/400x400/background2.jpg" class="media-object" alt="">
-                                                </span>
-                                                <span class="media-body">
-                                                    <!-- meta icon -->
-                                                    <span class="media-meta">Nov 27, 2014</span>
-                                                    <!--/ meta icon -->
-                                                    <span class="media-heading">Mauris eu turpis. Nulla aliquet.</span>
-                                                </span>
-                        </a>
-                        <a href="javascript:void(0);" class="media border-dotted">
-                                                <span class="pull-left">
-                                                    <img src="../image/background/400x400/background3.jpg" class="media-object" alt="">
-                                                </span>
-                                                <span class="media-body">
-                                                    <!-- meta icon -->
-                                                    <span class="media-meta">Oct 13, 2014</span>
-                                                    <!--/ meta icon -->
-                                                    <span class="media-heading">Consectetur adipisicing elit.</span>
-                                                </span>
-                        </a>
-                    </div>
-                    <!--/ Message list -->
-                </div>
-                <div class="tab-pane pl0 pr0" id="recent">
-                    <!-- Media list -->
-                    <div class="media-list">
-                        <a href="javascript:void(0);" class="media border-dotted">
-                                                <span class="pull-left">
-                                                    <img src="../image/background/400x400/background4.jpg" class="media-object" alt="">
-                                                </span>
-                                                <span class="media-body">
-                                                    <!-- meta icon -->
-                                                    <span class="media-meta">Apr 26, 2013</span>
-                                                    <!--/ meta icon -->
-                                                    <span class="media-heading">Ut enim ad minim veniam</span>
-                                                </span>
-                        </a>
-                        <a href="javascript:void(0);" class="media border-dotted">
-                                                <span class="pull-left">
-                                                    <img src="../image/background/400x400/background5.jpg" class="media-object" alt="">
-                                                </span>
-                                                <span class="media-body">
-                                                    <!-- meta icon -->
-                                                    <span class="media-meta">Nov 30, 2013</span>
-                                                    <!--/ meta icon -->
-                                                    <span class="media-heading">Duis aute irure dolor in reprehenderit.</span>
-                                                </span>
-                        </a>
-                        <a href="javascript:void(0);" class="media border-dotted">
-                                                <span class="pull-left">
-                                                    <img src="../image/background/400x400/background6.jpg" class="media-object" alt="">
-                                                </span>
-                                                <span class="media-body">
-                                                    <!-- meta icon -->
-                                                    <span class="media-meta">Oct 8, 2014</span>
-                                                    <!--/ meta icon -->
-                                                    <span class="media-heading">Excepteur sint occaecat cupidatat non</span>
-                                                </span>
-                        </a>
-                    </div>
-                    <!--/ Message list -->
-                </div>
-            </div>
         </div>
-    </div>
-    <!-- Tabbed content -->
-</div>
-<!--/ END right / bottom side -->
-</div>
-</div>
-</section>
-<script type="text/javascript" src="../library/jquery/js/jquery.min.js"></script>
-<script type="text/javascript" src="../library/jquery/js/jquery-migrate.min.js"></script>
-<script type="text/javascript" src="../library/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../library/core/js/core.min.js"></script>
-<script type="text/javascript" src="../plugins/sparkline/js/jquery.sparkline.min.js"></script><!-- will be use globaly as a summary on sidebar menu -->
-<script type="text/javascript" src="../javascript/app.min.js"></script>
-<script type="text/javascript" src="../plugins/owl/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="../plugins/masonry/js/masonry.pkgd.min.js"></script>
-<script type="text/javascript" src="../javascript/pages/blog.js"></script>
+    </header>
 
-<script>
+    <aside class="sidebar sidebar-left sidebar-menu">
+        <section class="content slimscroll">
+            <h5 class="heading">TypeCast</h5>
+            <ul class="topmenu topmenu-responsive" data-toggle="menu">
+                <li >
+                    <a href="#">
+                        <span class="figure"><i class="ico-home2"></i></span>
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="#/aboutme">
+                        <span class="figure"><i class="ico-user"></i></span>
+                        <span class="text">About Me</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </aside>
 
-</script>
+    <section id="main" role="main">
+        <div class="container-fluid">
+            <div ng-view></div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="../library/jquery/js/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="http:////cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+    <script type="text/javascript" src="../library/jquery/js/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="../library/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../library/core/js/core.min.js"></script>
+    <script type="text/javascript" src="../plugins/sparkline/js/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="../javascript/app.min.js"></script>
+    <script type="text/javascript" src="../plugins/masonry/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="../javascript/pages/blog.js"></script>
+    <script type="text/javascript" src="../javascript/app.js"></script>
+
 </body>
 </html>
