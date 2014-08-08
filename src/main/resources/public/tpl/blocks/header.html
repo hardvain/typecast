@@ -1,0 +1,16 @@
+<!-- navbar header -->
+<div class="navbar-header {{app.settings.navbarHeaderColor}}">
+    <button class="pull-right visible-xs" ui-toggle-class="show" data-target=".app-aside"><i
+            class="glyphicon glyphicon-align-justify"></i></button>
+    <!-- brand --> <a href="#/" class="navbar-brand text-lt"> <i class="fa fa-code"></i> <img src="img/logo.png" alt="." class="hide"> <span
+        class="hidden-folded m-l-xs">{{app.name}}</span> </a> <!-- / brand -->
+</div> <!-- / navbar header --> <!-- navbar collapse -->
+<div class="collapse navbar-collapse box-shadow {{app.settings.navbarCollapseColor}}"> <!-- buttons -->
+    <div class="nav navbar-nav m-l-sm hidden-xs">
+        <a href class="btn no-shadow navbar-btn"  ui-toggle-class="app-aside-folded" target=".app">
+            <i class="fa fa-dedent fa-fw text"></i>
+            <i class="fa fa-indent fa-fw text-active"></i>
+        </a>
+    </div>
+
+</div> <!-- / navbar collapse -->
