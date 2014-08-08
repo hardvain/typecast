@@ -4,6 +4,6 @@ import com.twitter.finatra.Controller
 
 class HomeController extends Controller {
 	get("/") { request =>
-		render.static("/index.html").toFuture
+		render.static("/views/index.html").toFuture
 	}
 }
