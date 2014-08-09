@@ -64,5 +64,18 @@ The above code is a pseudo code. Consider all the variables to be a mutable one.
 
 Both of the above problems can be avoided if the variables are immutable which means that once a value is associated with a variable, it can never be changed. The `PrintingService` can not change the value of `details`. This eliminates the first problem. Also for testing it is enough if we test the final result of a method because we can be sure that none of the internal calls will have changed our variable. Well it should not be called as `variable` because its value cant be changed, but I have stuck to that for the understanding of those coming from imperative background. 
 
+###Persistent Data Structures
+
 Ok. This solves two good problems. But what about the memory problem? Well it may be small overhead to create copies of individual variables, but what about lists? What about a list containing a million records? If I am to modify even one of those, should I create a copy of it? That would be a huge memory problem. Isnt it? Well ya. Yes it is a problem. But this problem has been tackled by the usage of persistent data structures. Woah. Wait. What is a persistent Data Structure?
+
+Let us say that we have an array of integers. 
+
+	var integerArray = [1,2,3,4]
+
+Lets assume that this is implemented as a linked list in memory. The head will be `1` and tail will be `4`. Its representation will be `1 => 2 => 3 => 4`. Now we have to change the first value to `0`. So the required representation will be `0 => 2 => 3 => 4`. As you can see that apart from one value the rest are the same. The programming language intelligently uses the same memory for the common values and just point the head to a different value. This is how persistent data structures work. Well I agree that there is still some mmeory overhead compared to in place mutation, but the actualy overhead is greatly reduced by using this method.
+
+### Use of immutability in Concurrent Programming
+It is also seems that using immutable values helps a great deal in concurrent programming. Anyone who has done concurrent programming in Java or C# will know about the pain of avoiding deadlocks and corruption of values. We have to make sure that one thread doesnt modify a variable when another thread is using it. This was accomplished using locks. But recently programming languages have improved a lot in their support for concurrent programming but still it leaves us wanted for more in some cases. But when a variable is immutable, we can be 100% sure that it will never be changed and hence there is no need of locks and no memory corruption will be possible. 
+
+## 2. First Class Functions
 
