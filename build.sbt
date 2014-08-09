@@ -1,6 +1,6 @@
-name := "finatra_example"
+name := "io.aravindh.blog"
 
-version := "0.0.1-SNAPSHOT"
+version := "1.0"
 
 scalaVersion := "2.10.3"
 
