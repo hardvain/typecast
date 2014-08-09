@@ -39,6 +39,7 @@ Consider a scenario where we have an array of names. Our job is to filter the na
 	var namesStartingInD = names.filter(_.startsWith('D'))
 	println(namesStartingInD)
 	```
+As you can see that not only the imperative version is bigger, verbose and comparitively difficult to comprehend, the functional version is shorter and easily comprehensible. What we are doing here? We have a list of string, we filter it based on some criteria. The computer knows that when u filter a list, you will get another list (an empty list in the worst case). Then why should I tell the computer to create an empty list and fill the values in it when it already knows that? This si what I meant by telling the computer what to do and not how to do. It seems that surprisingly in most of the cases it is true. i.e. the computer has the intelligence to predict what to do and how to do. Its enough we guide it. This is the essence of functional programming. Now there are few basic rules / guidelines which if we follow, will aid the computer to predict and understand our requirement easily. These are the features upon which functional programming languages operate upon. Haskell supports all of those which we are going to see and infact it enforces we follow those things. That is the reason haskell is called a pure functional programming language. 
 
 ## 1. Immutability:
 A programming language is useless without the ability to store values in some place and then read it later. We usually call this as variables. 
