@@ -1,44 +1,7 @@
-# finatra_example
+# Source code for the website www.aravindh.io
 
-Finatra requires either [maven](http://maven.apache.org/) or [sbt](http://www.scala-sbt.org/release/docs/Getting-Started/Setup.html) to build and run your app.
+Built with:
 
-## SBT Instructions
-
-### Runs your app on port 7070
-
-    sbt run
-
-### Testing
-
-    sbt test
-
-### Packaging (fatjar)
-
-    sbt assembly
-
-
-## Maven Instructions
-
-### Runs your app on port 7070
-
-    mvn scala:run
-
-### Testing
-
-    mvn test
-
-### Packaging (fatjar)
-
-    mvn package
-
-
-## Heroku
-
-### To put on heroku
-
-    heroku create
-    git push heroku master
-
-### To run anywhere else
-
-    java -jar target/*-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+1. Finatra,
+2. Bootstrap,
+3. Angular JS
