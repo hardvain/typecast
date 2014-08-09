@@ -3,6 +3,7 @@ var app = angular.module('app', ['ngAnimate', 'ui.router', 'ui.bootstrap', 'ui.l
     .run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
+
     }])
     .config(['$stateProvider', '$urlRouterProvider', '$controllerProvider', '$compileProvider', '$filterProvider', '$provide', function ($stateProvider, $urlRouterProvider, $controllerProvider, $compileProvider, $filterProvider, $provide) {
         app.controller = $controllerProvider.register;
@@ -94,7 +95,7 @@ angular.module('app.controllers', [])
         var isIE = !!navigator.userAgent.match(/MSIE/i);
         !isTouchDevice && $('html').addClass('no-touch');
         isIE && $('html').addClass('ie');
-        $scope.app = {name: 'aravindh.io', version: '1.0.0', color: {primary: '#7266ba', info: '#23b7e5', success: '#27c24c', warning: '#fad733', danger: '#f05050', light: '#e8eff0', dark: '#3a3f51', black: '#1c2b36'}, settings: {navbarHeaderColor: 'bg-info dker', navbarCollapseColor: 'bg-info dker', asideColor: 'bg-light dker', headerFixed: true, asideFixed: false, asideFolded: true}}
+        $scope.app = {name: 'aravindh.io', version: '1.0.0', color: {primary: '#7266ba', info: '#23b7e5', success: '#27c24c', warning: '#fad733', danger: '#f05050', light: '#e8eff0', dark: '#3a3f51', black: '#1c2b36'}, settings: {navbarHeaderColor: 'bg-info dker', navbarCollapseColor: 'bg-info dker', asideColor: 'bg-light dker', headerFixed: true, asideFixed: false, asideFolded: true}};
     }])
     .controller('AccordionDemoCtrl', ['$scope', function ($scope) {
         $scope.oneAtATime = true;
@@ -536,3 +537,5 @@ angular.module('app.directives', [])
             });
         }};
     }]);
+
+
