@@ -12,12 +12,13 @@ var app = angular.module('app', ['ngAnimate', 'ui.router', 'ui.bootstrap', 'ui.l
         app.service = $provide.service;
         app.constant = $provide.constant;
         $urlRouterProvider
-            .otherwise('/app/dashboard');
+            .otherwise('/dashboard');
         $stateProvider
-            .state('app', {abstract: true, url: '/app', templateUrl: 'tpl/app.html'})
+            .state('app', {abstract: true, url: '', templateUrl: 'tpl/app.html'})
             .state('app.dashboard', {url: '/dashboard', templateUrl: 'tpl/dashboard.html'})
             .state('app.haskell', {url: '/haskell', templateUrl: 'tpl/haskell.html'})
             .state('app.aboutme', {url: '/aboutme', templateUrl: 'tpl/aboutme.html'})
+            .state('app.haskell.introduction', {url: '/introduction', templateUrl: 'tpl/haskell/introduction.html'})
 //            .state('app.ui', {url: '/ui', template: '<div ui-view class="fade-in-up"></div>'})
 //            .state('app.ui.buttons', {url: '/buttons', templateUrl: 'tpl/ui_buttons.html'})
 //            .state('app.ui.icons', {url: '/icons', templateUrl: 'tpl/ui_icons.html'})
