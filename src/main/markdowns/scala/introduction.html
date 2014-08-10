@@ -302,29 +302,43 @@ sup {
 	}
 }
 </style>
-<title>Introduction to Haskell</title>
+<title>Introduction to Scala</title>
 
 </head>
 <body>
-<h1>Introduction to Haskell</h1>
+<h1>Introduction to Scala</h1>
 
-<p>Haskell is a pure, lazy functional programming language with strong static typing. In particular, it is a polymorphically statically typed, lazy, purely functional language, quite different from most other programming languages. The language is named for Haskell Brooks Curry, whose work in mathematical logic serves as a foundation for functional languages. Haskell is based on the lambda calculus, hence the lambda we use as a logo. The first version of Haskell ("Haskell 1.0") was launched in 1990.</p>
+<p>Scala is a hybrid programming language that supports both functional and object oriented style of programming. Scala is a short form for scalable language. It is a statically typed programming language that is impure in its support for functional programming. Scala programs runs on the JVM and hence compiles to the same bytecode which java compiles to. This makes scala code interoperable with java. Lets see what makes scala an object oriented and functional programming language and features unique to scala.</p>
+
+<h2>What is an object oriented language?</h2>
+
+<p>A language is said to an object oriented language if it manily satisfies all of the following:</p>
+
+<ol>
+<li>Encapsulation,</li>
+<li>Abstraction,</li>
+<li>Inheritance and</li>
+<li>Polymorphism.</li>
+</ol>
+
+
+<p>I am not going to go into details of the above because they are pretty much supported  by all mainstream languages. Scala is no exception. Infact it has better support for them compared to other languages.</p>
 
 <h2>What is a functional programming language?</h2>
 
-<p>A language is said to be a functional programming language if it satisfies all of the following:</p>
+<p>A language is said to be a functional programming language if it mainly satisfies all of the following:</p>
 
 <ol>
 <li>Immutability,</li>
 <li>First Class Functions,</li>
 <li>Referential Transparency,</li>
 <li>Purity,</li>
-<li>Lazy Evaluation,</li>
+<li>Lazy Evaluation and</li>
 <li>Recursion.</li>
 </ol>
 
 
-<p>In a functional programming language (like Haskell), programs are executed by evaluating expressions in contrast with imperative programming where programs are composed of statements which change the global state when executed. Now what does that mean? Lets take an example. Suppose you go on a trip to India. You find the place very soothing and think that drinking a tea now would be like the icicng on the cake. You have two options.</p>
+<p>In a functional programming language, programs are executed by evaluating expressions in contrast with imperative programming where programs are composed of statements which change the global state when executed. Scala supports both the above two methods, but encourages you to use functional style. Every statement is an expression in scala, but you can still write imperative code which you need to avoid. Now what does that mean? Lets take an example. Suppose you go on a trip to India. You find the place very soothing and think that drinking a tea now would be like the icicng on the cake. You have two options.</p>
 
 <ol>
 <li>Go to your kitchen, take all the necessary utensils and ingredients, prepare the tea, heat it and enjoy it by drinking, or you can</li>
@@ -359,7 +373,7 @@ println(namesStartingInD)
 
 <p>As you can see that not only the imperative version is bigger, verbose and comparitively difficult to comprehend, the functional version is shorter and easily comprehensible. What we are doing here? We have a list of string, we filter it based on some criteria. The computer knows that when u filter a list, you will get another list (an empty list in the worst case). Then why should I tell the computer to create an empty list and fill the values in it when it already knows that? This si what I meant by telling the computer what to do and not how to do. It seems that surprisingly in most of the cases it is true. i.e. the computer has the intelligence to predict what to do and how to do. Its enough we guide it. This is the essence of functional programming. In the functional example the <code>_</code> is bound to every name in the <code>names</code> array as it is iterated.</p>
 
-<p>Now there are few basic rules / guidelines which if we follow, will aid the computer to predict and understand our requirement easily. These are the features upon which functional programming languages operate upon. Haskell supports all of those which we are going to see and infact it enforces we follow those things. This is the reason haskell is called a pure functional programming language.</p>
+<p>Now there are few basic rules / guidelines which if we follow, will aid the computer to predict and understand our requirement easily. These are the features upon which functional programming languages operate upon.</p>
 
 <h2>1. Immutability</h2>
 
@@ -367,7 +381,7 @@ println(namesStartingInD)
 
 <p>Woah... wait... If I am not allowed to modify the contents of a variable, how am I going to update it? How am I going to convey the result of a calculation to someone fucntion? Am I going to create a new variable every time I need to modify? Wont that increase the memory consumption and hamper the performance? Well it seems there are better ways to achieve all of the above. Lets see that.</p>
 
-<p>In generaly mutability is the process of mutating a variable (changing the value associated with a variable). This is not allowed in haskell and functional programming languages in general. Why so? Lets see an example.</p>
+<p>In generaly mutability is the process of mutating a variable (changing the value associated with a variable). This is not considered good in functional programming world. Why so? Lets see an example.</p>
 
 <pre><code>public List&lt;String&gt; GetAndPrintDetails(names){
     var details = detailsService.GetDetails(names)
@@ -376,7 +390,7 @@ println(namesStartingInD)
 }
 </code></pre>
 
-<p>The above code is a pseudo code. Consider all the variables to be a mutable one. i.e. their values can be changed any number of times anywhere. It has a method called <code>GetAndPrintDetails</code> with a parameter called <code>names</code> passed into it. We get the details of all the people by using <code>DetailsService</code> and then print the details suing <code>PrintingService</code>. After printing we return the details to the caller. This does the task perfectly. But is it not buggy? Well, lets see what are the ways in which this can break.</p>
+<p>The above code is a pseudo code. Consider all the variables to be mutable. i.e. their values can be changed any number of times anywhere. It has a method called <code>GetAndPrintDetails</code> with a parameter called <code>names</code> passed into it. We get the details of all the people by using <code>DetailsService</code> and then print the details suing <code>PrintingService</code>. After printing we return the details to the caller. This does the task perfectly. But is it not buggy? Well, lets see what are the ways in which this can break.</p>
 
 <ol>
 <li>We pass the details variable to <code>PrintingService</code>. Ideally it is supposed to only print the data and do nothing. What if the <code>PrintingService</code> by mistake removes some of the details? Can we guatantee that it wont do so? Yes if it is our code, No if it is from a library. Even if it is our code, we need to make sure that <code>PrintingService</code> works propery in order to make sure our method works properly.</li>
@@ -403,7 +417,7 @@ println(namesStartingInD)
 
 <h2>2. First Class Functions</h2>
 
-<p>A language is said to have first class functions if it treats functions as first class citizens. WTH was that? Well, it means that you can store a function in a variable and pass it around like a normal variable containing an int or a string. You can pass it to functions, return it from a function, you can have a list of functions. This method of programming enables programming with a higher level of abstraction because you have the ability to pass functions (code logic) which are no longer tied to instances of a class as in object oriented world. You can also create anonymous functions which small utility functions where giving them a name doesnt make much sense. First class functions enables the concept of higher order functions which are functions that takes functions as parameters. Higher-order functions are very useful for refactoring code and reduce the amount of repetition. We will see more about higher order functions when we see about functions in Haskell.</p>
+<p>A language is said to have first class functions if it treats functions as first class citizens. WTH was that? Well, it means that you can store a function in a variable and pass it around like a normal variable containing an int or a string. You can pass it to functions, return it from a function, you can have a list of functions. This method of programming enables programming with a higher level of abstraction because you have the ability to pass functions (code logic) which are no longer tied to instances of a class as in object oriented world. You can also create anonymous functions which small utility functions where giving them a name doesnt make much sense. First class functions enables the concept of higher order functions which are functions that takes functions as parameters. Higher-order functions are very useful for refactoring code and reduce the amount of repetition. We will see more about higher order functions when we see about functions in scala.</p>
 
 <h2>3. Referential Transparency</h2>
 
@@ -418,20 +432,70 @@ println(namesStartingInD)
 
 <h2>4. Purity</h2>
 
-<p>Some language allow functions to  interact with external components apart from returning values. Such languages are called as impure languages. What is meant by interacting with external components? Well, printing to screen, writing to file etc are called cas side effects. They are used to convey something to the outside world. This is called as impurity. Woah. Wait. If haskell is a pure programming language then it cant write to console or file? Then how is it going to be useful? Well, the answer is, yes haskell is a pure programming language and it allows you to interact with the external world through a special set of constructs, the use of which is limited and hence provide a clear separation between the main logic of the program and side effects. We will see how haskell does that when we read about monads.</p>
+<p>Some language allow functions to  interact with external components apart from returning values. Such languages are called as impure languages. What is meant by interacting with external components? Well, printing to screen, writing to file etc are called cas side effects. They are used to convey something to the outside world. This is called as impurity. Scala is an impure functional language in sense that it allows you to interact with the external world from anywhere in the code. But it is encouraged to restrict your interactions to a smaller boundary of code.</p>
 
 <h2>5. Lazy Evaluation</h2>
 
-<p>Since pure computations are referentially transparent they can be performed at any time and still yield the same result. This makes it possible to defer the computation of values until they are needed, that is, to compute them lazily. Lazy evaluation avoids unnecessary computations and allows, for example, infinite data structures to be defined and used. LINQ in C# uses lazy evaluation techniques. <code>[1..]</code> is an infinite array in haskell. But wont it cause stack overflow? Well, no. Because it will not be evaluated untill some other function uses it. <code>take 5 [1..]</code> will result in <code>[1,2,3,4,5]</code>. <code>take</code> is a function that takes two paramters. A number and an array and results in the number of items taken from the top of that array.</p>
+<p>Since pure computations are referentially transparent they can be performed at any time and still yield the same result. This makes it possible to defer the computation of values until they are needed, that is, to compute them lazily. Lazy evaluation avoids unnecessary computations and allows, for example, infinite data structures to be defined and used. LINQ in C# uses lazy evaluation techniques. <code>[1..]</code> is an infinite list in haskell. But wont it cause stack overflow? Well, no. Because it will not be evaluated untill some other function uses it. <code>take 5 [1..]</code> will result in <code>[1,2,3,4,5]</code>. <code>take</code> is a function that takes two paramters. A number and an list and results in the number of items taken from the top of that list.</p>
 
 <h2>6. Recursion</h2>
 
-<p>If loops are not allowed in functional programming languages because loops function based on mutating of variables, then how are we going to do some repeated logic on some complex data structures? The answer is recursion. Recursion is the concpet of a function calling itself. Recursion in languages without tail call optimization usually results in stack overflow for large sets of data. Haskell is tail call optimized and we will see what that is while reading more about recursion later.</p>
+<p>If loops are not allowed in functional programming languages because loops function based on mutating of variables, then how are we going to do some repeated logic on some complex data structures? The answer is recursion. Recursion is the concpet of a function calling itself. Recursion in languages without tail call optimization usually results in stack overflow for large sets of data. Scala is not tail call optimized because of the constraints posed by JVM.</p>
 
-<p>Well haskell supports all of the above and hence it is a pure lazy functional programming language. Functional programs are often shorter and easier to understand than their imperative counterparts. Also once familiar, they increase the productivity of a programmer.</p>
+<h2>Some scala niceties</h2>
 
-<h2>Specific Features of Haskell</h2>
+<h3>Type Inference</h3>
 
-<p>Apart from the above features, haskell is also a statically type programming language which means that every expression you type in haskell is type safe and verified by the compiler before run time which greatky reduces the probability of bugs. It is usually said that once your code compiles in haskell, there is a very good chance it will work perfectly. (only if you code the logic correctly). A constant argument against statically typed programming language is that it tends to be very verbose by supplying type information everywhere in order to help the compiler. But programs written in haskell seldom use type information(usually type information is given as a practice only for method signatures that are exposed outside). This is possible because of the Hindley-Milner algorithm that haskell uses to infer types. I am not going to get into the details of this because I dont know much about it. If you are interested, google is always there.</p>
+<p>One of the biggest problems citied against statically typed programming languages is that they are verbose. Well, tht was true in a way for Java and to some extent C#. But scala relieves you of lot of such pain by infering the types where ever possible. Lets see an example.</p>
+
+<pre><code>// a hashmap in Java
+HashMap&lt;string,int&gt; names = new HashMap&lt;string,int&gt;()
+
+// a hashmap in scala
+val names = HashMap&lt;String,Int&gt;()
+</code></pre>
+
+<p>You can see that scala is able to infer the type of the variable from the type of the right hand side of the expression. This reduces some typing of types for us. Lets see another example.</p>
+
+<pre><code>def square(number : Int)={
+    number * number
+}
+</code></pre>
+
+<p>Dont worry if the above code doesnt make sense. That is a method in scala. The name of the method is <code>square</code> and it takes a parameter <code>number</code> of type <code>Int</code>. It squares the number. But you can see that there is no return type specified for the method. It seems that in scala, the type of the last expression is the return type of the method. Scala's type inference comes into play here. I accept that scala's type inference is not as good as Haskell but scala doesnt use the <code>Hindley-Milner</code> algorithm that haskell uses. But still it tries to infer the types wherever possible. The same function in Haskell would be like:</p>
+
+<pre><code>square n = n * n
+</code></pre>
+
+<h3>Semicolon Inference</h3>
+
+<p>You need not type semicolon at the end of every expression in scala. It is optional. Semicolon is required only when there are multiple expressions in a single line.</p>
+
+<pre><code>// no semicolon required at the end
+val names = List("Dhoni", "Sachin")
+
+// semicolon required to separate the two expressions. Again note that there is no semicolon at the end of the line
+val names = List("Dhoni","Sachin") ; val age = 25
+</code></pre>
+
+<h3>Optional return statement</h3>
+
+<p>In scala, the return statement at the end of every method is optional. Since every line of code is an expression in scala, the last line is the reutrn value and its type is the return type of the method. In the <code>square</code> example we saw earlier, the expression <code>number * number</code> is going to return an <code>Int</code> and it is the return value of the function. No explicit <code>return</code> keyword is required. There is one catch though. If you specify an explicit return statement, then you need to specify the return type of the method explicitly. The same <code>square</code> method can be written as:</p>
+
+<pre><code>// The second Int is the return type of the method
+def square(number : Int): Int = {
+    return number * number
+}
+</code></pre>
+
+<p>You need to be careful while using the <code>=</code> in a method definition. If you dont use the <code>=</code>, the method will be considered to return <code>Unit</code> which is equivalent to <code>void</code> in C# and java. The last expression of the method will still be evaluated but will not be considered as the return value of the method.</p>
+
+<pre><code>// The return value is considered to be Unit and hence then result of this method can not be used anywhere.
+def square(number : Int){
+    number * number
+}
+
+val squaredValue = square(5) // squaredValue is not equal to 25 in this case. It is equal to Unit
+</code></pre>
 </body>
 </html>
