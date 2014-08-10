@@ -20,6 +20,7 @@ var app = angular.module('app', ['ngAnimate', 'ui.router', 'ui.bootstrap', 'ui.l
             .state('app.scala', {url: '/scala', templateUrl: 'tpl/scala.html'})
             .state('app.aboutme', {url: '/aboutme', templateUrl: 'tpl/aboutme.html'})
             .state('app.scala.introduction', {url: '/introduction', templateUrl: 'tpl/scala/introduction.html'})
+            .state('app.scala.vals-and-vars', {url: '/vals-and-vars', templateUrl: 'tpl/scala/vals-and-vars.html'})
 //            .state('app.ui', {url: '/ui', template: '<div ui-view class="fade-in-up"></div>'})
 //            .state('app.ui.buttons', {url: '/buttons', templateUrl: 'tpl/ui_buttons.html'})
 //            .state('app.ui.icons', {url: '/icons', templateUrl: 'tpl/ui_icons.html'})

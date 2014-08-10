@@ -1,0 +1,136 @@
+<div class="wrapper-md">
+    <div class="panel panel-info">
+        <div class="panel-heading h2 text-center">Vals & Vars in Scala</div>
+        <div class="panel-body" style="font-size: 18px; text-align: justify; line-height: 30px">
+
+
+            <p>Every programming language will have a means to assign some value to a variable. We use this to store
+                important data for our program to run. Different paradigms of programming languages allow you to assign
+                values differently. In C# you can create an int by any one of the following:</p>
+
+<pre><code>int age = 25;
+    // or
+
+    var age = 25;
+</code></pre>
+
+            <p>C# has some type inference features and hence it is able to find the type of the variable.</p>
+
+            <p>In scala you can use <code>var</code> or <code>val</code> to assign a value to a variable. (Well variable
+                is not a correct term here). Both of the following are valid.</p>
+
+<pre><code>var age = 25
+    // or
+    val age = 25
+</code></pre>
+
+            <p>The main difference between both of them is that the first one is a mutable variable whereas the second
+                one is immutable. <code>val</code> is similar to <code>final</code> in java. Once initialized, it can
+                never be changed. Scala encourages you to use <code>val</code> where ever possible. Scala compiler will
+                scold you when you try to reassign a <code>val</code>.</p>
+
+<pre><code>val age = 25
+    age = 26
+    // Causes a compilation error. "error : reassignment to a val"
+</code></pre>
+
+            <p>In scala you mention the type of the variable after the name or you need not mention the type and allow
+                scala to infer it. Both of the follwing are valid expressions.</p>
+
+<pre><code>val age = 25
+
+    val age : Int = 25
+</code></pre>
+
+            <p>If you dont specify an initial value to a variable then the compiler cannot infer its type. In that case
+                you need to explicitly tell the type of the variable like this.</p>
+
+<pre><code>val age : Int
+</code></pre>
+
+            <p>The above line of code can live only inside an abstract class or a trait. We will see about both of them
+                later.</p>
+
+            <p>It is good to explicity annotate your variables when they are exposed as a part of an API so that you can
+                annotate with the most general compatible type. For example <code>List</code> class inherits most of its
+                methods from <code>Seq</code> class. If only the methods from <code>Seq</code> are going to be used, we
+                can mention the type as <code>Seq</code> which will give an idea of the methods used on that variable to
+                whoever consumes the API.</p>
+
+            <p>There is one nice catch here.The <code>var</code> and <code>val</code> keywords only specify whether the
+                reference can be changed to refer to a different object (var) or not (val). They don’t specify whether
+                or not the object they reference is mutable. <code>val</code> will restrict the reference of the value
+                from changing once it is initialized. But it will not tell anything if the contents of the reference is
+                changed. What is that? It is known as modifying the state of an immutable object.</p>
+
+<pre><code>val names = Array("Dhoni", "Sachin")
+
+    //the below line will cause an error because we are reassigning names to a different array
+    names = Array("Dhoni")
+
+    // but the below line is valid
+    names(0) = "Ganguly"
+
+    println(names(0)) // prints Ganguly
+</code></pre>
+
+            <p>As we saw, the variable <code>names</code> is bound to an array reference. Lets consider the array as a
+                box that can hold something. When using <code>val</code>, this box cant be changed. But the contents of
+                the box can be changed. Thats why we were able to modify the first value in the array.</p>
+
+            <p>The <code>names</code> variable we saw above was an immutable one. That is a single value holding a
+                reference to some box. In this case the <code>Array</code>. But we saw that the <code>Array</code>
+                itself was mutable. i.e we were able to change the first element in it. In the introduction we saw that
+                immutability helps in concurrent programming where the variable's value can never be changed. But we
+                have changed the first value of the array. Wont it cause a problem when used in multicore programs? Yes.
+                It will. So whats the solution? Use <code>List</code>. List by itself is an immutable data structure.
+                What is that? When you add a new element or modify an element in a list, you will get a new list. The
+                original list can never be modified. Lets see an example.</p>
+
+<pre><code>val names = List("Dhoni", "Sachin")
+
+    // use updated method to update a list
+    val newNames = names.updated(0,"Ganguly")
+
+    println(names) // prints List("Dhoni", "Sachin")
+    println(newNames) // prints List("Ganguly", "Sachin")
+</code></pre>
+
+            <blockquote><p>With all these benefits of immutability, why do we need mutable <code>vars</code>? Well there
+                are some cases where <code>vars</code> which are mutable increse the performace. It is adviced that
+                unless you are sure about the performance gain, dont use <code>var</code>.</p></blockquote>
+
+            <h3>Constructor parameters</h3>
+
+            <p>Both <code>val</code> and <code>var</code> can be used for defining constructor parameters for a class.
+                <code>vars</code> will get both getters and setters generated whereas <code>vals</code> will get only
+                getters generated. Woah. Wait. Generated? How can getter and setter be generated? Well yeah. Scala does
+                that for you when you use something called as <code>case classes</code>. We will see more about
+                constructors and constructor parameters later.</p>
+
+            <h3>Method parameters</h3>
+
+            <p>All the variables passed as parameters in a method are always immutable. They can never be changed.</p>
+
+<pre><code>def square(number : Int)={
+    number = 5 // Causes a compilation error. "error: reassignment to a val"
+    }
+</code></pre>
+
+            <h3>Fields</h3>
+
+            <p>Fields are variables that belong to an object. The fields are accessible from inside every method in the
+                object. Fields can also be accessible outside the object, depending on what access modifiers the field
+                is declared with. Fields can be both val's and var's.</p>
+
+            <h3>Local Variables</h3>
+
+            <p>Local variables are variables declared inside a method. Local variables are only accessible from inside
+                the method, but the objects you create may escape the method if you return them from the method. Local
+                variables can be both var's and val's.</p>
+
+        </div>
+
+
+    </div>
+</div>
