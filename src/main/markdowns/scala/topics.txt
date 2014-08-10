@@ -1,1 +1,3 @@
 multi line strings
+string interpolation
+types in views
