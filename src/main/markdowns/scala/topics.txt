@@ -1,3 +1,4 @@
 multi line strings
 string interpolation
 types in views
+difference between val and def
